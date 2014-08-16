@@ -1,0 +1,10 @@
+USE MassSpec
+GO
+SELECT * FROM UniqueRat2
+WHERE GeneID IN
+(
+SELECT GeneID FROM UniqueRat1
+INTERSECT
+SELECT GeneID FROM UniqueRat2
+)
+ORDER BY Score DESC
