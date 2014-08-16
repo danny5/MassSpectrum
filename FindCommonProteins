@@ -1,4 +1,4 @@
-USE MassSpec
+USE MS
 GO
 SELECT * FROM UniqueRat2
 WHERE GeneID IN
